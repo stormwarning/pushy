@@ -1,21 +1,24 @@
-/*! Pushy - v0.9.1 - 2013-9-16
-* Pushy is a responsive off-canvas navigation menu using CSS transforms & transitions.
-* https://github.com/christophery/pushy/
-* by Christopher Yee */
+/**! Pushy - v0.9.1 - 2013-9-16
+ * Pushy is a responsive off-canvas navigation menu using CSS transforms & transitions.
+ * https://github.com/christophery/pushy/
+ * by Christopher Yee 
+ */
 
 $(function() {
-    var pushy = $('.pushy'), //menu css class
-        body = $('body'),
-        container = $('#container'), //container css class
-        push = $('.push'), //css class to add pushy capability
-        siteOverlay = $('.site-overlay'), //site overlay
-        pushyClass = "pushy-left pushy-open", //menu position & menu open class
-        pushyActiveClass = "pushy-active", //css class to toggle site overlay
-        containerClass = "container-push", //container open class
-        pushClass = "push-push", //css class to add pushy capability
-        menuBtn = $('.menu-btn, .pushy a'), //css classes to toggle the menu
-        menuSpeed = 200, //jQuery fallback menu speed
-        menuWidth = pushy.width() + "px"; //jQuery fallback menu width
+    var body = $('body'),
+        pushy = $('.pushy'),                        //menu css class
+        container = $('.layout'),                   //container css class
+        push = $('.js-push'),                       //css class to add pushy capability
+        siteOverlay = $('.pushy-overlay'),          //site overlay
+        menuBtn = $('.pushy-trigger, .pushy a'),    //css classes to toggle the menu
+        
+        pushyClass = "pushy--open",                 //menu open class
+        pushyActiveClass = "pushy--is-active",      //css class to toggle site overlay
+        containerClass = ".is-pushed",              //container open class
+        pushClass = ".is-pushed",                   //css class to add pushy capability
+        
+        menuSpeed = 200,                            //jQuery fallback menu speed
+        menuWidth = pushy.width() + "px";           //jQuery fallback menu width
 
     function togglePushy(){
         body.toggleClass(pushyActiveClass); //toggle site overlay
