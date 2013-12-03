@@ -14,8 +14,8 @@ $(function() {
         
         pushyClass = "pushy--open",                 //menu open class
         pushyActiveClass = "pushy--is-active",      //css class to toggle site overlay
-        containerClass = ".is-pushed",              //container open class
-        pushClass = ".is-pushed",                   //css class to add pushy capability
+        containerClass = "is-pushed",               //container open class
+        pushClass = "is-pushed",                    //css class to add pushy capability
         
         menuSpeed = 200,                            //jQuery fallback menu speed
         menuWidth = pushy.width() + "px";           //jQuery fallback menu width
